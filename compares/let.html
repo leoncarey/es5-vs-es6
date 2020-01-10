@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let - ES6</title>
+
+    <style>
+        section > div {
+            height: 100px;
+            width: 100px;
+            background: red;
+            float: left;
+            margin: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Let - ES6</h1>
+    </header>
+
+    <section></section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script type="text/babel">
+        for(var i=0; i<45; i++) {
+            var div = document.createElement('div');
+
+            div.onclick = function() {
+                alert('You clicked on a box #'+ i);
+            };
+
+            document.getElementsByTagName('section')[0].appendChild(div);
+        }
+    </script>
+
+
+</body>
+</html>
