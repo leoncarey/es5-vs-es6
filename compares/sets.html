@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/app.css" />
+    <title>Sets - ES6-se</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sets - ES6-se</h1>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script type="text/babel">
+      // Ex 01 - Adicionar coisas
+      let devs = new Set();
+      devs.add("Léo");
+      devs.add("Carlos");
+
+      console.log("Devs: ", devs);
+      console.log("Quantos devs tem? ", devs.size);
+      console.log("Existe o dev Léo? ", devs.has("Léo"));
+
+      // Ex 02 - Fácil manipulação de valores
+      //   let devs = new Set();
+      //   devs.add("Léo");
+      //   devs.add("Carlos");
+
+      //   const meusValores = devs.values();
+      //   console.log(
+      //     "O que tem mesmo no primeiro valor? ",
+      //     meusValores.next().value
+      //   );
+      //   console.log("E o próximo? ", meusValores.next().value);
+
+      // Ex 03 - Deletar coisas
+      //   let devs = new Set();
+      //   devs.add("Léo");
+      //   devs.add("Carlos");
+
+      //   console.log("Devs: ", devs);
+      //   console.log("Quantos devs tem? ", devs.size);
+      //   console.log("Existe o dev Léo? ", devs.has("Léo"));
+
+      //   devs.delete("Léo");
+      //   console.log("Existe o dev Léo ainda? ", devs.has("Léo"));
+
+      // Ex 04 - Trabalhando com Arrays
+      //   let data = [5, 6, 8, 9, 5, 6, 2, 3, 4, 7];
+      //   let set = new Set(data);
+
+      //   console.log("O Set remove as entradas existêntes: ", set);
+
+      //   console.log("data.length: ", data.length);
+      //   console.log("set.size: ", set.size);
+    </script>
+  </body>
+</html>

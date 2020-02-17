@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/app.css" />
+    <title>Maps - ES6-se</title>
+  </head>
+  <body>
+    <header>
+      <h1>Maps - ES6-se</h1>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script type="text/babel">
+      // Ex01 - Manipulação de chaves e valores mais OOP
+      let skills = new Map();
+      skills.set("javascript", { nivel: "baixo" });
+      skills.set("php", { nivel: "-3" });
+
+      console.log("Minhas Skills: ", skills);
+      console.log("Quantas skills possuo? ", skills.size);
+      console.log("Consigo pegar pela chave? ", skills.javascript);
+      console.log("E agora? ", skills.get("javascript"));
+    </script>
+  </body>
+</html>
