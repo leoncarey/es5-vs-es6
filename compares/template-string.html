@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/app.css">
+    <title>Template String - ES6-se</title>
+
+    <style>
+        section {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Template String - ES6-se</h1>
+    </header>
+
+    <section></section>
+
+    <script type="text/javascript">
+        // Ex 01 - Concatenar strings
+        // const string1 = 'Texto 1',
+        //     string2 = 'Texto 2';
+
+        // let template = `Minha primeira string é: ${string1}\nMinha segunda string é: ${string2}`;
+        // console.log(template);
+
+
+        // Ex 02 - Possibilidade de concatenar strings de forma mais legível
+        // const title1 = 'Título 1',
+        //     title2 = 'Título 2',
+        //     paragraph1 = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore illum et qui fugiat dolor ea veritatis eos, delectus cupiditate perferendis maxime recusandae fugit, earum, aliquam expedita deleniti facere ullam culpa?',
+        //     paragraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tenetur obcaecati, architecto vitae magni assumenda excepturi cupiditate numquam odit, expedita vel fugiat, debitis eaque facilis impedit sit. Magnam, cupiditate!';
+
+        // let template = `
+        //     ${title1}
+        //     ${paragraph1}
+
+        //     ${title2}\n
+        //     ${paragraph2}
+        // `;
+
+        // console.log(template);
+
+
+        // Ex 03 - Possibilidade de concatenar strings e adicionar ao html
+        const title1 = 'Título 1',
+            title2 = 'Título 2',
+            paragraph1 = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore illum et qui fugiat dolor ea veritatis eos, delectus cupiditate perferendis maxime recusandae fugit, earum, aliquam expedita deleniti facere ullam culpa?',
+            paragraph2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tenetur obcaecati, architecto vitae magni assumenda excepturi cupiditate numquam odit, expedita vel fugiat, debitis eaque facilis impedit sit. Magnam, cupiditate!';
+
+        let template = `
+            <h5>${title1}</h5>
+            <p>${paragraph1}</p>
+            <br>
+            <h5>${title2}</h5>
+            <p>${paragraph2}</p>
+        `;
+
+        document.querySelector('section').insertAdjacentHTML('beforeend', template);
+    </script>
+
+    <!-- 
+    Plus sobre insertAdjacentHTML
+    
+    -- beforebegin
+    <p>
+        -- afterbegin
+        Texto paragrafo
+        -- beforeend
+    </p>
+    -- afterend
+-->
+
+</body>
+
+</html>

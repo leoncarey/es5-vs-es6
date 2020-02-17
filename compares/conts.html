@@ -16,12 +16,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
     <script type="text/babel">
         // Ex 01 - Não atribuição
-        const a;
-        a = 2;
-        console.log('a =', a);
+        // const a;
+        // a = 2;
+        // console.log('a =', a);
 
         // Ex 02 - Apenas dentro do escopo
-        // var a = 2;
+        // const a = 2;
         // {
         //     const a = 3;
         //     console.log(a);
@@ -29,12 +29,13 @@
         // console.log(a);
 
         // Ex 03 - Não pode ser atribuido mas um objeto/array pode ser modificado
-        // const produto = {
-        //     nome: 'Caneta azul',
-        //     preco: 2.59
-        // };
-        // produto.nome = 'Azul caneta';
-        // console.log(produto.nome);
+        const produto = {
+            nome: 'Caneta azul',
+            preco: 2.59
+        };
+        produto.nome = 'Azul caneta';
+        produto.qty = 2;
+        console.log(produto);
 
         // produto = {};
 
