@@ -15,23 +15,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
     <script type="text/babel">
       // Ex01 - Manipulação de chaves e valores mais OOP
-      // let skills = new Map();
-      // skills.set("javascript", { nivel: "baixo" });
-      // skills.set("php", { nivel: "-3" });
-
-      // console.log("Minhas Skills: ", skills);
-      // console.log("Quantas skills possuo? ", skills.size);
-      // console.log("Consigo pegar pela chave? ", skills.javascript);
-      // console.log("E agora? ", skills.get("javascript"));
-
-      // Ex02 - Trabalhando com Arrays prontos
-      const array = [
-        ["javascript", { nivel: "baixo" }],
-        ["php", { nivel: "-3" }]
-      ];
-      let skills = new Map(array);
+      let skills = new Map();
+      skills.set("javascript", { nivel: "baixo" });
+      skills.set("php", { nivel: "-3" });
 
       console.log("Minhas Skills: ", skills);
+      console.log("Quantas skills possuo? ", skills.size);
+      console.log("Consigo pegar pela chave? ", skills.javascript);
+      console.log("E agora? ", skills.get("javascript"));
+
+      // Ex02 - Trabalhando com Arrays prontos
+      // const array = [
+      //   ["javascript", { nivel: "baixo" }],
+      //   ["php", { nivel: "-3" }]
+      // ];
+      // let skills = new Map(array);
+
+      // console.log("Minhas Skills: ", skills);
     </script>
   </body>
 </html>
