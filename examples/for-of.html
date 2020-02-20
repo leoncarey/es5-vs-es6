@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/app.css" />
+    <title>For of - ES6-se</title>
+
+    <style>
+      section {
+        padding: 40px;
+      }
+
+      p.colore {
+        background: red;
+        color: #fff;
+        transition: all .3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>For of - ES6-se</h1>
+    </header>
+
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        aliquam, quia asperiores laborum repellat in assumenda nihil nam, beatae
+        tempore, similique reprehenderit architecto libero aperiam cupiditate
+        iusto inventore recusandae sapiente!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        aliquam, quia asperiores laborum repellat in assumenda nihil nam, beatae
+        tempore, similique reprehenderit architecto libero aperiam cupiditate
+        iusto inventore recusandae sapiente!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+        aliquam, quia asperiores laborum repellat in assumenda nihil nam, beatae
+        tempore, similique reprehenderit architecto libero aperiam cupiditate
+        iusto inventore recusandae sapiente!
+      </p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script type="text/babel">
+      // Ex 01 - Manipulação de String
+      let string = 'Leonardo';
+      for(let letra of string) {
+        console.log(`Letra: ${letra}`);
+      }
+
+      // Ex 02 - Manipulação de Arrays
+      // let array = [1, 10, 15, 56, 28, 21];
+      // for (let valor of array) {
+      //   console.log(`Valor: ${valor}`);
+      // }
+
+      // Ex 03 - Manipulação de listas de Objetos
+      // let devs = [
+      //   {
+      //     nome: "Leonardo",
+      //     especialidade: "fullstack"
+      //   },
+      //   {
+      //     nome: "Jurema",
+      //     especialidade: "backend"
+      //   }
+      // ];
+      // for (let dev of devs) {
+      //   console.log("Desenvolvedor: ", dev);
+      // }
+
+      // Ex 04 - Manipulação de Array com Destructuring assignment
+      // let devs = [
+      //   {
+      //     nome: "Leonardo",
+      //     especialidade: "fullstack"
+      //   },
+      //   {
+      //     nome: "Jurema",
+      //     especialidade: "backend"
+      //   }
+      // ];
+      // for (let { nome, especialidade } of devs) {
+      //   console.log(`O(A) Desenvolvedor(a) ${nome} é ${especialidade}.`);
+      // }
+
+      // Ex 05 - Elementos html
+      // let paragrafos = document.querySelectorAll("section > p");
+
+      // setTimeout(() => {
+      //   for (let paragrafo of paragrafos) {
+      //     paragrafo.classList.add('colore');
+      //   }
+      // }, 1000);
+    </script>
+  </body>
+</html>
